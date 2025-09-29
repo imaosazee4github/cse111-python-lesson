@@ -1,0 +1,17 @@
+import pytest
+from names import make_full_name, extract_family_name, extract_given_name
+
+
+
+
+def test_make_full_name():
+    assert make_full_name("Sally", "Brown") == "Brown; Sally"
+
+
+def extract_family_name():
+    assert extract_family_name("Brown; Sally") == "Brown"
+
+def extract_given_name():
+    assert extract_given_name("Brown; Sally") == "Sally"
+
+pytest.main(["-v", "--tb=line", "-rN", __file__])
