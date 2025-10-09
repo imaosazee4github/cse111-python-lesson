@@ -1,0 +1,51 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+Ans: Local Nigerian Language Translator
+
+2. What real-world problem will your program address or help to solve?
+
+Ans: Many Nigerians speak local languages (Edo/Bini, Yoruba, Igbo, Hausa, etc.)
+but English is often the main language for digital communication. 
+This program will allow users to translate English text into their chosen local language and also translate between local languages.
+it helps bridge language barriers, preserves local languages, and makes communication easier for people who prefer native languages.
+
+3. What will you learn from developing this program?
+
+Ans: i. How to create and use Python dictionaries for langauage mappings.
+    ii. File handling and reading.writing translations(CSV or JSON).
+   iii. String processing and text normalization for translations.
+    iv. How to structure a Python program with functions and reusable code.
+
+4. What Python modules will your program use?
+
+Ans: i. csv - to read or store dictionaries of translations.
+    ii. datetime - to track date and time of translation.
+   iii. json - to save or load translation dictionaries in JSON format is necessary.
+    
+
+5. List the names of functions you will need?
+
+Ans:  i. load_translations(filename) - Reads a CSV or JSON file of translations and returns a dictionary.
+     ii. translate_text(text, source_language, target_language, translations_dictionary) - Takes input text and language selection, returns the translated text.
+    iii. get_user_language_choices() - Gets the source and target languages from the user.
+     iv. main() - Coordinates the overall program flow: load translations, get user input, translate, and display results.
+
+6. List the names of the test functions you will write.
+
+Ans: i. test_load_translations() Ensures the translation dictionary loads correctly.
+    ii. test_translate_text() -Checks translation correctness for multiple language pairs.
+   iii. test_edges_cases() - Verifies behavior for untranslated words, empty strings, and invalid language selections.
+
+
+
